@@ -13,3 +13,6 @@ Paused Playable starts playing when a GameObject's visible state is changed and 
     - Ensure that the character is not being rendered at this moment, whether it is through the Game view, Scene view, or any other form.
 5. Click the "Toggle Camera" button again, and you will see the character reappear, but the character's animation **unexpectedly** resumes playing.
 
+## Solution
+
+Use `SetSpeed(0)` instead of `Pause()`.
